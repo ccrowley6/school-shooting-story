@@ -1,0 +1,333 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Crowley School Shooting Project</title>
+    <meta name="description" content="Crowley School Shooting Story">
+    <meta name="author" content="Colleen Crowley">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+        crossorigin="anonymous">
+
+    <!-- Link to CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <!-- Load c3.css -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.6.8/c3.min.css" rel="stylesheet">
+
+
+    <!-- Load d3.js and c3.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.6.8/c3.min.js"></script>
+
+
+    <!--Google Fonts - Call in the Google fonts PT Serif and Montserrat.-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|PT+Serif:400,700" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!--NavBar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <!--Stars Images-->
+        <img src="images/star-red.png" id="star-red" alt="red-star" class="img star-red">
+        <img src="images/star-blue.png" id="star-blue" alt="blue-star" class="img star-blue">
+        <!--Ends Stars Images-->
+        <a class="navbar-brand" href="#">An American Tragedy</a>
+
+        <!--Hamburger menu(responsive menu)-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!--Navigation links (menu items)-->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <!-- Link -->
+                <li class="nav-item">
+                    <a class="nav-link" href="#Headline">Where &amp When</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#bodytext">The Carnage</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#YearChart">A Profile</a>
+                </li>
+                <!-- End Link -->
+            </ul>
+        </div>
+    </nav>
+    <!--End NavBar-->
+
+    <!-------------------------------------------------------------------------------
+        Content / main body section of the site...
+    ------------------------------------------------------------------------------->
+    <div class="container-fluid"> <!--stretch the content across the page-->
+
+        <div class="row">  <!--new row to contain the AR-15 and introductory paragraph-->
+            <div class="col"> <!--bootstrap grid definition-->
+                <div class="container"> <!--center any content placed within this div-->
+
+                    <!-------------------------------------------------------------------------------
+                        Image Link of AR-15
+                    ------------------------------------------------------------------------------->
+                    <div class="row">
+                        <div class="col">
+                            <img src="images/ar15.jpg" id="ar-15_image" alt="AR-15" class="img-fluid hero-image mx-auto d-block">
+                        </div>
+                    </div>
+
+                    <!--Headline-->
+                    <div class="row">
+                        <div class="col">
+
+                            <div id="Headline" class="xcontainer">
+                                <h1>An <span class="blue">American</span> Tragedy</h1>
+
+                                <!--Byline-->
+                                <h6 class="text-center font-weight-bold mt-3 byLine">Over 200 school shootings
+                                    in two decades. <br>What have we learned?</br></h6>
+
+                                <!--stars-->
+                                <div class="tiny-intro-stars text-center mt-3">
+                                    <img src="images/star-red.png" id="star-red-intro" alt="red-star" class="star-intro star-red">
+                                    <img src="images/star-blue.png" id="star-blue-intro" alt="blue-star" class="star-intro star-blue">
+                                    <img src="images/star-red.png" id="star-red-intro" alt="red-star" class="star-intro star-red">
+                                    <img src="images/star-blue.png" id="star-blue-intro" alt="blue-star" class="star-intro star-blue">
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                  <!--Intro Paragraph---------------------->
+                    <div class="row">
+                        <div class="col">
+                            <div id="intro-paragraph" class="container">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Iaculis urna id
+                                    volutpat lacus laoreet non curabitur gravida arcu. Fames ac turpis egestas
+                                    maecenas pharetra convallis. Tristique risus nec feugiat in fermentum
+                                    posuere urna nec tincidunt. Fringilla est ullamcorper eget nulla. Auctor
+                                    urna nunc id cursus metus. Elementum nisi quis eleifend quam adipiscing
+                                    vitae proin. Tristique risus nec feugiat in fermentum. Scelerisque purus
+                                    semper eget duis at. Senectus et netus et malesuada fames ac turpis. Mi
+                                    eget mauris pharetra et ultrices neque ornare aenean euismod.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                <!--End Intro Paragraph------------->
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <!--Main body, chapters, images and paragraphs----------------->
+        <div class="row">
+            <div class="col">
+
+
+                <!--Main Body text-->
+                <div id="bodytext" class="xcontainer">
+
+                    <div class="row">
+                        <div class="col">
+
+                      <!--Chapter title and stars-------------------->
+                            <img src="images/star-blue.png" id="star-blue" alt="blue-star" class="star-blue xstar-intro">
+                            <img src="images/star-red.png" id="star-red" alt="red-star" class="star-red xstar-intro">
+                            <span class="chapterTitle"><strong>Chapter title</strong></span>
+
+                        <!--Paragraph One------------>
+                            <p class="chapterTitleParagraph">Amet purus gravida quis blandit turpis cursus in hac.
+                                Lacus laoreet non
+                                curabitur
+                                gravida arcu ac tortor
+                                dignissim convallis. Sagittis vitae et leo duis ut diam quam nulla. Porta non
+                                pulvinar
+                                neque laoreet
+                                suspendisse interdum consectetur. Enim facilisis gravida neque convallis a cras
+                                semper
+                                auctor neque. Eget
+                                nunc scelerisque viverra mauris in aliquam sem. Rhoncus urna neque viverra
+                                justo nec
+                                ultrices. Diam sit
+                                amet nisl suscipit adipiscing. Eget magna fermentum iaculis eu non diam
+                                phasellus
+                                vestibulum. Mattis
+                                pellentesque id nibh tortor id.
+                            </p>
+
+                            <!---Image of Alaina Petty-------->
+                            <div class="container text-center">
+
+                                <label>
+                                    <img src="images/alaina-petty.jpg" id=".alaina-petty" alt="Alaina Petty" class="img-fluid stack-image">
+                                    <p class="caption font-weight-bold">
+                                        Caption: Insert image or video above
+                                    </p>
+                                </label>
+                            </div>
+
+
+                            <!--Paragraph Two-------------->
+                            <div class="row">
+                                <div class="col">
+                                    <p class="mt-0 mb-0 chapterTitleParagraph">Tellus mauris a diam maecenas sed
+                                        enim ut. Tortor posuere
+                                        ac ut
+                                        consequat semper
+                                        viverra. Egestas diam in
+                                        arcu cursus euismod quis viverra nibh. Consequat nisl vel pretium
+                                        lectus quam id leo.
+                                        Tempus imperdiet
+                                        nulla malesuada pellentesque elit eget. Sed velit dignissim sodales ut
+                                        eu. Arcu cursus
+                                        euismod quis viverra
+                                        nibh cras. In vitae turpis massa sed elementum. Rhoncus urna neque
+                                        viverra justo nec
+                                        ultrices dui sapien.
+                                        Et ultrices neque ornare aenean. Vitae justo eget magna fermentum
+                                        iaculis. Viverra nam
+                                        libero justo laoreet
+                                        sit amet. Sed id semper risus in hendrerit gravida rutrum quisque non.
+                                        Enim neque
+                                        volutpat ac tincidunt.
+                                        Dolor morbi non arcu risus quis varius.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <hr />
+
+
+                    <!--Graphic / Chart container---------->
+                    <div class="row">
+                        <div class="col">
+                            <div id="YearChart" class="graphic-container">
+                                <h2 class="text-center"><strong>Shootings by year</strong></h2>
+                                <p>The number of shootings per year has generally remained high in the US since
+                                    the
+                                    turn of the century,
+                                    with noticable dips in 2002, 2011 and 2015. The last three years, the
+                                    number of
+                                    shootings has been
+                                    consistantly high.</p>
+
+                                <!--Shootings Chart------->
+                                <div id="shootingsByYearChart"></div>
+
+                                <div class="text-center font-weight-bold"><em>Source: Data collected by The
+                                        Washington Post</em></div>
+                            </div>
+                            <!-- END graphic container-->
+
+                        </div>
+                    </div>
+
+
+                    <hr class="mb-0" />
+
+
+                    <!--Paragraph Three------------------>
+                    <div class="row">
+                        <div class="col">
+                            <p class="bottomParagraph chapterTitleParagraph">Malesuada proin libero nunc consequat
+                                interdum
+                                varius sit. Purus in massa
+                                tempor nec
+                                feugiat nisl. Habitant
+                                morbi tristique senectus et netus et malesuada. Libero nunc consequat interdum
+                                varius
+                                sit amet mattis.
+                                Vitae suscipit tellus mauris a. Eget arcu dictum varius duis at consectetur lorem
+                                donec
+                                massa. Neque
+                                volutpat ac tincidunt vitae semper quis. Mattis nunc sed blandit libero volutpat
+                                sed.
+                                Integer malesuada
+                                nunc vel risus commodo. Pulvinar proin gravida hendrerit lectus a. Sit amet dictum
+                                sit
+                                amet justo. Massa
+                                tempor nec feugiat nisl pretium fusce id velit ut. Mollis nunc sed id semper risus.
+                                Scelerisque fermentum
+                                dui faucibus in ornare quam viverra orci sagittis. Vestibulum lectus mauris
+                                ultrices
+                                eros in cursus turpis
+                                massa tincidunt. Aliquet porttitor lacus luctus accumsan tortor. Tellus elementum
+                                sagittis vitae et leo
+                                duis ut diam quam. Pharetra diam sit amet nisl suscipit adipiscing bibendum est
+                                ultricies.</p>
+
+                        </div>
+                      </div>
+                    </div>
+                <!--End Main Body text-->
+
+            </div>
+        </div>
+        <!--End of Main body, chapters, images and paragraphs---------->
+
+    </div>
+
+
+
+    <!--Footer----->
+    <footer class="footer container-fluid">
+        <h6 class="footerText1">Footer text</h6>
+        <h6 class="footerText2 mt-4">Copyright 2018 Capital New Service</h6>
+    </footer>
+
+
+    <!--Javascript section------>
+    <!-- jQuery, Popper.js,  Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+
+    <!-- c3 script-->
+    <script>
+        //CHART 1
+        var chart = c3.generate({
+            bindto: '#shootingsByYearChart',
+            data: {
+                x: 'x',
+                columns: [
+                    ['x', 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011,
+                        2012, 2013, 2014, 2015, 2016, 2017, 2018
+                    ],
+                    ['Number of incidents', 7, 12, 13, 5, 11, 9, 13, 15, 10, 9, 9, 9, 7, 11, 13, 16, 7, 13,
+                        14, 12
+                    ],
+                ]
+            },
+            color: {
+                pattern: ['#2a8dc5', '#455380', '#ee6a4b', '#60c4b2', '#973895']
+            }
+        });
+    </script>
+
+
+
+</body>
+
+
+</html>
